@@ -1,0 +1,102 @@
+.subscribe {
+    text-align: center;
+
+    @media screen and (max-width: $pre-desktop) {
+        margin-top: 60px;
+    }
+    margin-top: 60px;
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 93px;
+    }
+    
+    &__text {
+        margin-bottom: 20px;
+
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+
+    &__box {
+        @media screen and (max-width: $pre-desktop) {
+            max-width: 450px;
+        }
+        @media screen and (min-width: $desktop) {
+            display: flex;
+        }
+    }
+
+    &__input {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        width: 100%;
+        height: 50px;
+
+        @media screen and (min-width: $desktop) {
+            margin-right: 12px;
+            width: 358px;
+        }
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(33, 150, 243, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0.48px;
+
+        outline: none;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: 0.48px;
+        }
+    }
+
+    &__button {
+        width: 200px;
+        height: 50px;
+        padding: 10px 62px 10px 28px;
+
+        position: relative;
+
+        border: 1px;
+        border-radius: 4px;
+        background: $selection-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.875;
+        letter-spacing: 0.96px;
+        cursor: pointer;
+
+        @media screen and (max-width: $pre-desktop) {
+            margin-top: 20px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right: 28px;
+        bottom: 13px;
+
+        fill: #FFF;
+    }
+}

@@ -1,0 +1,71 @@
+.clients {
+    padding-top: 60px;
+    
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+    }
+
+    &__head {
+
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.84px;
+
+        @media screen and (min-width: $desktop) {
+            font-size: 36px;
+            letter-spacing: 1.08px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: $space;
+        margin-top: 50px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - $space) / 2);
+
+        @media screen and (min-width: $tablet) {
+            flex-basis: calc((100% - 2 * $space) / 3);
+        }
+
+        @media screen and (min-width: $desktop) {
+            flex-basis: calc((100% - 5 * $space) / 6);
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 16px 0;
+
+        border-radius: 4px;
+        border: 1px solid $svg-color;
+
+        transition: border-color 250ms $timing-function;
+
+        &:hover,
+        &:focus {
+            border-color: $selection-color;
+        }
+    }
+
+    &__icon {
+        fill: $svg-color;
+
+        transition: fill 250ms $timing-function;
+
+        .clients__link:hover &,
+        .clients__link:focus & {
+            fill: $selection-color;
+        }
+    }
+}
