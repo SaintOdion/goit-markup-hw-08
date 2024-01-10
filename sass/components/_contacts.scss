@@ -1,24 +1,27 @@
 .contacts {
-
     display: flex;
     flex-direction: column-reverse;
+
+    gap: 32px;
 
     margin-top: 70%;
 
     @media screen and (min-width: $tablet) {
-        margin-left: auto;
-        flex-direction: column;
-    }
-    
-&__item:not(:last-child) {
-
-    margin-top: 32px;
-    
-    @media screen and (min-width: $tablet) {
-        margin-right: 40px;
         margin-top: 0;
-        }
-}
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        align-items: center;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    &__item{
+        height: min-content;
+    }
 
  @media screen and (max-width: $pre-tablet) {
     &__item:last-child &__link{
@@ -34,13 +37,19 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         align-items: center;
+        font-size: 12px;
+        letter-spacing: 0.24px;
+    }
+
+    @media screen and (min-width: $desktop) {
         font-size: 14px;
         letter-spacing: 0.28px;
-        }
+    }
 
     display: flex;
     align-items: center;
 
+    text-wrap: nowrap;
     color: $text-color;
     font-size: 24px;
     font-style: normal;

@@ -1,4 +1,7 @@
 .header-social{
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
     display: flex;
     flex-wrap: wrap;
 

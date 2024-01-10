@@ -4,7 +4,6 @@
 
     padding: 118px 0;
     text-align: center;
-    max-width: $mobile;
 
     background-color: #C4C4C4;
     background-image: linear-gradient(to right,
@@ -23,13 +22,45 @@
                     rgba(47, 48, 58, 0.40),
                     rgba(47, 48, 58, 0.40)),
                     url(../images/bcg_mobile_2x.jpg);
-            
-        }
+    }
 
     @media screen and (min-width: $tablet) {
-        max-width: 1600px;
 
+        padding: 118px 0;
+
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.40),
+                    rgba(47, 48, 58, 0.40)),
+                url(../images/bcg_tablet.jpg);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.40),
+                        rgba(47, 48, 58, 0.40)),
+                    url(../images/bcg_tablet_2x.jpg);
+            }
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1600px;
         padding: 200px 0;
+    
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.40),
+                rgba(47, 48, 58, 0.40)),
+        url(../images/bcg_desktop.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.40),
+                    rgba(47, 48, 58, 0.40)),
+        url(../images/bcg_desktop_2x.jpg);
+        }
     }
 
     &__head {
@@ -47,15 +78,14 @@
         font-style: normal;
         text-transform: uppercase;
 
-        @media screen and (min-width: $tablet) {
-
+        @media screen and (min-width: $desktop) {
             max-width: 696px;
 
             font-size: 44px;
             font-weight: 900;
             line-height: 1.36364;
             letter-spacing: 2.64px;
-            }
+        }
     }
 
     &__button {

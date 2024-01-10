@@ -39,7 +39,7 @@
         line-height: 1.2;
         letter-spacing: 0.36px;
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $desktop) {
             font-size: 14px;
             line-height: 1.71;
             letter-spacing: 0.42px;
@@ -55,7 +55,7 @@
         letter-spacing: 0.36px;
         text-decoration-line: underline;
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $desktop) {
             font-size: 14px;
             line-height: 1.71;
             letter-spacing: 0.42px;

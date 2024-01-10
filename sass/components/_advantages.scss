@@ -2,31 +2,25 @@
     padding-top: 60px;
 
     @media screen and (min-width: $desktop) {
-            padding-top: 94px;
+        padding-top: 94px;
     }
 
     &__list {
-        
-        @media screen and (min-width: $tablet) {
-                display: flex;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space;
     }
 
     &__item {
-        max-width: 450px;
-        width: 100%;
-
+        flex-basis: 100%;
+        
         @media screen and (min-width: $tablet) {
-            max-width: 270px;
-            &:not(:last-child) {
-                    margin-right: 30px;
-            }
-        }
-
-        &:not(:last-child) {
-            margin-bottom: 30px;
+            flex-basis: calc((100% - $space) / 2);
         }
         
+        @media screen and (min-width: $desktop) {
+            flex-basis: calc((100% - 3 * $space) / 4);
+        }
     }
 
     &__box {

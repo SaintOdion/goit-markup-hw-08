@@ -16,7 +16,7 @@
     transition: transform 250ms $timing-function;
 
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
         max-width: 528px;
     }
 

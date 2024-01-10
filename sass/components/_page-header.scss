@@ -6,8 +6,19 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
+    max-width: $mobile;
     padding: 16px 15px;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        max-width: $tablet;
+        padding: 0 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
 }
 
 .navigation {
@@ -16,20 +27,35 @@ header {
 }
 
 .menu-container{
-    transform: translate(-101%, 0);
+    @media screen and (max-width: $pre-tablet) {
+        z-index: 1;
+        
+        transform: translate(-101%, 0);
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+    }
 
-    position: absolute;
-    // inset: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100dvh;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
+
 
     &__button{
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+
+    &[data-menu-close] {
         position: absolute;
         right: 15px;
         top: 10px;
     }
+}
 }
 
 .menu-container.open{

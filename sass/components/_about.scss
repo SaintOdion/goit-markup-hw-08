@@ -8,7 +8,6 @@
         margin-bottom: 50px;
         text-align: center;
         font-size: 36px;
-        font-style: normal;
         font-weight: 700;
         line-height: 1.2;
         letter-spacing: 1.08px;
@@ -24,7 +23,7 @@
         position: relative;
         z-index: 0;
               
-        flex-basis: calc((100% - 3 * $space) / 4);
+        flex-basis: calc((100% - 2 * $space) / 3);
         
     }
 
@@ -49,7 +48,6 @@
 
         text-align: center;
         font-size: 14px;
-        font-style: normal;
         font-weight: 700;
         line-height: 1.2;
         letter-spacing: 0.42px;
