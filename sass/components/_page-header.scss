@@ -46,6 +46,13 @@ header {
 
 
     &__button{
+        transition: fill 250ms $timing-function;
+        
+    &:hover,
+    &:focus {
+    fill: $selection-color;
+    }
+
     @media screen and (min-width: $tablet) {
         display: none;
     }
